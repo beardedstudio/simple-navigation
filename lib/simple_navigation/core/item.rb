@@ -136,7 +136,7 @@ module SimpleNavigation
       else
         @url = url
       end
-      @highlights_on = options.delete(:highlights_on)
+      @highlights_on = options[:highlights_on]
       @html_options = options
     end
   end
