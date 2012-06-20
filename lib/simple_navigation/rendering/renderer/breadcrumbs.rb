@@ -24,7 +24,12 @@ module SimpleNavigation
               list.concat a_tags(item.sub_navigation)
             end
           end
-          list
+
+          if !list.nil? && list.size > 0
+            return list
+          else
+            list
+          end
         end
       end
 
